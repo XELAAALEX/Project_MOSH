@@ -54,17 +54,16 @@ p{
     font-size: 1.5rem;
     text-transform: uppercase;
     color: red;
-}
-a{
     text-decoration: none;
+
 }
-a::after{
+.linkarrow::after{
     content: "-->";
     margin-left: 5px;
     transition: margin 0.15s;
 
 }
-a:hover::after{
+.linkarrow:hover::after{
     margin-left: 10px;
 }
 .badge{
@@ -123,4 +122,71 @@ a:hover::after{
     align-items: center;
     justify-content: center;
     border-radius: 100%;
+}
+.btn{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border: 0;
+    margin: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #70adfd;
+}
+.btn-secondary{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #52aebe;
+}
+.btn-third{
+    background-color: var(--color-accent);
+    color: #fff;
+
+}
+.btn-third:hover{
+    background-color: #f36d4b;
+}
+.btn-outline{
+    color: var(--color-headings);
+    background-color: #fff;
+    border: 2px solid var(--color-headings);
+
+}
+.btn-outline:hover{
+    background-color: var(--color-headings);
+    color: #fff;
+}
+.btn-block{
+    width: 100%;
+    display: inline-block;
+}
+.input{
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: 0;
+    color: var(--color-headings);
+    font-size: 2rem;
+}
+::placeholder{
+    color: #cdcbc7;
+}
+@media  screen and (min-width:1024px) {
+    .input{
+        font-size: 1.5rem;
+    }
 }
