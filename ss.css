@@ -6,6 +6,8 @@
     --color-body: #918ca4;
     --color-border: #ccc;
     --border-radius:45px;
+    --color-border:#ccc;
+    --border-radius:30px;
 } 
 *,*::after,*::before{
     box-sizing:border-box
@@ -176,12 +178,11 @@ p{
 }
 .input{
     padding: 1.5rem 3.5rem;
-    border: 1px solid #ccc;
-    border-radius: 30px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
     outline: 0;
     color: var(--color-headings);
-    font-size: 2rem;
-}
+    font-size: 2rem;}
 ::placeholder{
     color: #cdcbc7;
 }
@@ -189,4 +190,22 @@ p{
     .input{
         font-size: 1.5rem;
     }
+}
+
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+}
+.input-group .btn{
+    margin: 4px;
+}
+.input-group>.iconcontainer{
+    margin: 14px;
+
 }
