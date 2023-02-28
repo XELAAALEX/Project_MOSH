@@ -110,3 +110,17 @@ a:hover::after{
     padding: 3rem;
 
 }
+.icon{
+    width: 40px;
+    height: 40px;
+    fill:var(--color-primary)
+}
+.iconcontainer{
+    background-color: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
