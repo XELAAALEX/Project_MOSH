@@ -1,0 +1,17 @@
+.linkarrow{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+a::after{
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s;
+
+}
+a:hover::after{
+    margin-left: 10px;
+}
