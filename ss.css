@@ -269,6 +269,9 @@ p{
     background: #02cdf1;
 }
 
+.plan{
+    transition: transform .2s ease-out;
+}
 
 .plan-name{
     color: #fff;
@@ -312,6 +315,13 @@ p{
     right: 5%;
     
 }
+.plan:hover{
+    transform: scale(1.05);
+}
+.plan-popular:hover{
+    transform: scale(1.15);
+}
+
 @media screen and(min-width:1024px){
     .plan-name{
         font-size: 1.4rem;
