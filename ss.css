@@ -493,6 +493,7 @@ content: open-quote;
 }
 .collapsible-heading{
     margin-top: 0;
+    margin-bottom: 1rem;
     font-size: 3rem;
 }
 .collapsible-icon{
@@ -706,4 +707,71 @@ a{
         justify-self: end;
     }
     
+}
+
+
+
+.footer{
+    background: #232323;
+}
+.footer a{
+    color: #777;
+    transition: color .3s;
+}
+.footer a:hover{
+    color: #fff;  
+}
+.footer-section{
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer-section .list{
+    margin: 0;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer-brand{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer-brand img{
+    width: 100%;
+    max-width: 230px;
+}
+.footer-copyright{
+    font-size: 2.1rem;
+    color:#fff;
+    opacity: .3;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-section{
+        grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
+    }
+    .footer .collapsible-icon{
+        display: none;
+    }
+    .footer .collapsible-content{
+        opacity: 1;
+        max-height: 100%;
+    }
+    .footer-brand{
+        order: -1;
+        margin-top: 1rem;
+    }
+    .footer-copyright{
+        font-size: 1.5rem;
+    }
+    .footer-section{
+        border: none;
+    }
+    .footer-heading{
+        font-size: 1.6rem;
+    }
 }
