@@ -19,13 +19,15 @@ body{
     line-height: 1.5;
     color:var(--color-body);
 }
-h1, h2, h3{
-    color:var(--color-headings);
+h1, h2, h3 {
+    color: var(--color-headings);
     margin-bottom: 1rem;
-}
-h1{
-    font-size: 7rem;
-}
+    line-height: 1.1;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
 h2{
     font-size: 4rem;
 }
@@ -370,21 +372,21 @@ content: open-quote;
 }
 
 
-.grid{
+.grid {
     display: grid;
-}
-@media screen and (min-width:786px) {
-    .grid-1x2{
-        grid-template-columns: repeat(2,1fr);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .grid-1x2 {
+      grid-template-columns: repeat(2, 1fr);
     }
-    
-}
-@media screen and (min-width:1024px) {
-    .grid-1x3{
-        grid-template-columns: repeat(3,1fr);
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .grid-1x3 {
+      grid-template-columns: repeat(3, 1fr);
     }
-    
-}
+  }
 
 
 .testimonial{
@@ -478,36 +480,37 @@ opacity: .8;
 }
 
 
-.block{
-    --padding-vertical:6rem
+.block {
+    --padding-vertical: 5rem;
     padding: var(--padding-vertical) 2rem;
-}
+  }
 .block-heading{
     margin-top: 0;
 }
-.block-dark{
-    background-color: black;
-    color:#7b858b;
-}
-.block-dark > .block-heading{
+.block-dark {
+    background: #000;
+    color: #7b858b;
+  }
+.block-dark  .block-heading{
     color: #fff;
 }
 .block-skewed-right{
-    padding-bottom: var(--padding-vertical)+4rem;
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
-.block-skewed-left{
-    padding-bottom: var(--padding-vertical)+4rem;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-}
-.block-header{
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  }
+  .block-header {
     text-align: center;
-}
+    margin-bottom: 4rem;
+  }
 
-.container{
-    max-width:1140px;
+.container {
+    max-width: 1140px;
     margin: 0 auto;
-}
+  }
 a{
     text-decoration: none;
 }
@@ -566,3 +569,30 @@ a{
         border: 0;
     }
 }
+
+
+
+ .hero{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+
+}
+.hero-tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero-content {
+      text-align: left;
+      align-self: center;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .hero {
+      padding-top: 0;
+    }
+  }
+  
