@@ -13,6 +13,13 @@
 *,*::after,*::before{
     box-sizing:border-box
 }
+::selection{
+    background: var(--color-primary);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
@@ -33,6 +40,7 @@ h2{
 }
 h3{
     font-size: 3rem;
+    font-weight: 500;
    
 }
 p{
@@ -116,6 +124,7 @@ p{
 .listtick {
     list-style-image: url(/images/tick.svg);
     padding: 3rem;
+    color: var(--color-headings);
 
 }
 .icon{
@@ -341,6 +350,7 @@ p{
 
 .media{
     display: flex;
+    margin-bottom: 4rem;
 }
 .media-title{
     margin-top: 0;
@@ -514,16 +524,18 @@ opacity: .8;
     background: #000;
     color: #7b858b;
   }
-.block-dark  .block-heading{
+.block-dark h1,
+.block-dark h2,
+.block-dark h3{
     color: #fff;
 }
-.block-skewed-right{
+.block-skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-}
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  }
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   }
   .block-header {
     text-align: center;
@@ -596,10 +608,7 @@ a{
 
 
 
- .hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
-}
 .hero-tagline {
     font-size: 2rem;
     color: #b9c3cf;
@@ -679,3 +688,20 @@ a{
     }
 }
   
+
+
+.block-showcase-image{
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase-image{
+        width: auto;
+        max-width: 700px;
+        justify-self: end;
+    }
+    
+}
