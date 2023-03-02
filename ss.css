@@ -72,20 +72,20 @@ p{
     margin-left: 10px;
 }
 
-.badge{
-    font-weight: 400;
-    white-space: nowrap;
-    padding: .5rem 2rem;
-    font-size: 2rem;
+.badge {
     border-radius: 20px;
-}
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+  }
 .badge-primary{
     background-color: var(--color-primary);
     color: #fff;
 }
 .badge-secondary{
-    background-color: var(--color-secondary);
-    color: #fff;
+    background: var(--color-secondary);
+  color: #fff;
 }
 .badge-third{
     background-color: #3cc9e2;
@@ -103,11 +103,11 @@ p{
         font-size: 1.2rem;
     }
 }
-.list{
+.list {
     list-style: none;
-    padding: 0;
-    color: var(--color-headings);
-}
+    padding-left: 0;
+  }
+
 .listinline.listitem {
     display: inline-block;
     margin-left: 3rem;
@@ -140,17 +140,25 @@ p{
 .iconcontainer-third{
     background: var(--color-accent);
 }
-.btn{
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 2rem 3rem;
-    border: 0;
-    margin: 1rem 0;
-    text-align: center;
-    text-decoration: none;
+.btn {
     border-radius: 40px;
-    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    outline: 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 .btn:hover{
     cursor: pointer;
@@ -213,16 +221,15 @@ p{
     }
 }
 
-.input-group{
+.input-group {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     display: flex;
-    align-items: center;
-    padding: 1rem;
-}
+  }
 .input-group .input{
     border: 0;
     flex-grow: 1;
+    padding: 1.5rem 2rem;
 }
 .input-group .btn{
     margin: 4px;
@@ -595,4 +602,28 @@ a{
       padding-top: 0;
     }
   }
-  
+
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain-prices {
+  color: var(--color-headings);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain-prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
