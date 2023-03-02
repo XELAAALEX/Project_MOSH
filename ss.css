@@ -427,6 +427,8 @@ content: open-quote;
 }
 .testimonial-image > img{
     width: 100%;
+    height: 80%;
+    object-fit: cover;
 }
 .testimonial-image{
     position: relative;
