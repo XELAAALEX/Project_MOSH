@@ -157,7 +157,7 @@ p{
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -239,6 +239,7 @@ p{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 .input-group .btn{
     margin: 4px;
@@ -536,7 +537,7 @@ opacity: .8;
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   }
-.block--skewed-left {
+.block-skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   }
@@ -545,8 +546,8 @@ opacity: .8;
     margin-bottom: 4rem;
   }
 
-.container {
-    width: 100%;
+  .container {
+    max-width: 1140px;
     margin: 0 auto;
   }
   
@@ -648,6 +649,7 @@ a{
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
+  max-width: 700px;
   margin: 0 auto;
 }
 
