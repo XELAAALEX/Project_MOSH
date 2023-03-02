@@ -261,7 +261,9 @@ p{
     background-color: var(--color-secondary);
     color: #fff;
 }
-
+.card-primary .badge-primary{
+    background: #126de4;
+}
 
 .card-secondary.badge-secondary{
     background: #02cdf1;
@@ -293,6 +295,9 @@ p{
 .plan.listitem{
     margin-bottom: 2rem;
     margin-left: 3rem;
+}
+.plan-popular{
+    transform: scale(1.1);
 }
 
 .plan-popular .card-header{
@@ -381,6 +386,7 @@ content: open-quote;
 
 .grid {
     display: grid;
+    
   }
   
   @media screen and (min-width: 768px) {
@@ -515,9 +521,10 @@ opacity: .8;
   }
 
 .container {
-    max-width: 1140px;
+    max-width: 1540px;
     margin: 0 auto;
   }
+  
 a{
     text-decoration: none;
 }
@@ -627,3 +634,16 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+
+
+.block-plans .grid {
+    gap: 8rem 4rem;
+  }
+  
+  .block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  
